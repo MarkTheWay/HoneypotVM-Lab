@@ -55,9 +55,9 @@ Created a resource group and virtual network (`honeypot-vnet`, 10.0.0.0/24) in A
 
 Deployed a Windows Server VM configured to be intentionally vulnerable: public IP, weak administrator credentials, Windows Firewall disabled across all profiles. The goal was to generate realistic attacker telemetry, not to test my own defenses.
 
-![RDP VM Creation](Images/RDPVMCreation.png)
+
 ![NSG Downgrade](Images/NSGdowngrade.png)
-![Firewall Disabled](Images/VMfw_turnoff.png)
+
 
 ## Step 3: Deploying the Splunk Indexer
 
