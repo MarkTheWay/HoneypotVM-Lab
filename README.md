@@ -213,7 +213,6 @@ The finished dashboard is built the way a shift dashboard should be: total volum
 - [`IncidentReport.md`](IncidentReport.md) — full investigation writeup, IOCs, timeline, and recommended response for the top SSH attacker
 - [`MITRE_ATTACK_Mapping.md`](MITRE_ATTACK_Mapping.md) — observed attacker behavior mapped to ATT&CK techniques, with log evidence for each
 - [`DetectionRules.md`](DetectionRules.md) — formal detection rule documentation (purpose, logic, thresholds, false-positive notes, response actions)
-- [`SPL_Queries.md`](SPL_Queries.md) — full library of SPL queries used throughout this project
 - [`data/attacker_credentials.csv`](data/attacker_credentials.csv) — full export of every logon attempt (RDP + SSH)
 - [`data/usernames_frequency.csv`](data/usernames_frequency.csv) — deduplicated username wordlist with frequency counts
 - [`data/passwords_frequency.csv`](data/passwords_frequency.csv) — deduplicated password wordlist with frequency counts (Cowrie only)
