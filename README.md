@@ -70,7 +70,6 @@ Deployed a separate Ubuntu VM to run Splunk Enterprise as the central log reposi
 
 Configured a Splunk Universal Forwarder to ship Windows Security event logs to the indexer in near real time — the log pipeline every downstream detection in this project depends on.
 
-![Forwarder Config](Images/ForwarderConfig.png)
 
 ## Step 5: Triage — First Real Alert (RDP)
 
@@ -129,9 +128,6 @@ index=* sourcetype="WinEventLog:Security" EventCode=4625
 
 Windows Security logs can confirm *that* someone tried to log in, but not *what they did next* or *what credentials they used* — a real limitation for an analyst trying to build a full picture. I deployed **Cowrie**, an application-layer SSH honeypot that simulates a real shell, to close that gap.
 
-![Cowrie VM Creation](Images/CowrieVMCreation.png)
-![Cowrie Status](Images/CowrieStatus.png)
-![Iptables Redirect](Images/IptablesRedirect.png)
 
 ## Step 9: Triage — First Real Alert (SSH)
 
@@ -185,11 +181,11 @@ The last analyst step was correlation — pulling both honeypots into a single v
 
 The finished dashboard is built the way a shift dashboard should be: total volume at a glance, geographic spread, a time trend to spot spikes, and a ranked table of the highest-priority IPs — everything needed to triage at the start of a shift without running ad-hoc searches first.
 
-![Main Dashboard](Images/MainDashboard.png)
+
 ![Time Chart](Images/TimeChart.png)
 ![Brute Force Table](Images/BruteForceTable.png)
 ![Country Pie Chart](Images/CountryPieChart.png)
-![Top Attacker IPs](Images/TopAttackerIPs.png)
+
 
 ---
 
