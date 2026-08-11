@@ -64,8 +64,6 @@ Deployed a Windows Server VM configured to be intentionally vulnerable: public I
 Deployed a separate Ubuntu VM to run Splunk Enterprise as the central log repository — the "single pane of glass" a SOC analyst would actually work out of, rather than checking each honeypot's local logs individually.
 
 ![Splunk VM Creation](Images/SplunkVMCreation.png)
-![Splunk Install](Images/SplunkInstall.png)
-![Splunk Listening](Images/SplunkListening.png)
 ![Splunk NSG](Images/SplunkNSG.png)
 
 ## Step 4: Forwarding RDP Logs to Splunk
